@@ -1,1 +1,38 @@
-ghpage
+<html>
+  <head>
+    <style type="text/css">
+      #foo {
+        width: 100%;
+        background-color: rgb(0,0,0);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="foo"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.0/openseadragon.min.js"></script>
+    <script>
+      var level = 5;
+      var pow = Math.pow(2, level);
+      h = 578;
+      w = 440;
+      var viewer = OpenSeadragon({
+        id:            'foo',
+        height: 578,
+        width: 440,
+        prefixUrl:     "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.0/images/",
+        showNavigator:  true,
+        tileSources:   {
+           height: pow*h,
+           width: pow*w,
+           tileWidth: w,
+           tileHeight: h,
+           maxLevel: level,
+           getTileUrl: function( level, x, y ){
+            return "img/" +
+                    (level) + "-r" + y + "-c" + x + ".jpg";
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
