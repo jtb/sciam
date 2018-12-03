@@ -10,23 +10,25 @@
   <body>
     <div id="foo"></div>
     <style>
-        .navigator .highlight{
-            opacity:    0.4;
-            filter:     alpha(opacity=40);
-            outline:    2px solid #900;
-            background-color: #900;
+        .highlight:hover , .highlight:focus {
+            #opacity:    0.6;
+            #filter:     alpha(opacity=40);
+            #background-color: white;
+            outline: #4CAF50 solid 4px;
+
         }
-        .highlight{
-            opacity:    0.4;
-            filter:     alpha(opacity=40);
-            outline:    12px auto #0A7EbE;
-            background-color: white;
-        }
-        .highlight:hover, .highlight:focus{
-            filter:     alpha(opacity=70);
-            opacity:    0.7;
+        .highlight {
+            #opactiy: 0.0;
             background-color: transparent;
+	    color: transparent;
         }
+        .highlight:hover p, .highlight:focus p{
+            background-color: white;
+            color: green;
+            font-weight: 900;
+
+        }
+
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.0/openseadragon.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -35,6 +37,7 @@
       var pow = Math.pow(2, level);
       h = 578;
       w = 440;
+      rH = 0.16420454545;
       var viewer = OpenSeadragon({
         id:            'foo',
         height: 578,
@@ -48,14 +51,88 @@
            tileHeight: h,
            maxLevel: level,
 
-           overlays: [{
-            id: 'example-overlay',
-            x: 0.33,
-            y: 0.75,
-            width: 0.2,
-            height: 0.25,
+           overlays: [
+           {
+            id: 'y1921a',
+            x: 0.0625,
+            y: 0,
+            width: 0.09375,
+            height: rH,
             className: 'highlight'
-           }],
+           },
+           {
+            id: 'y1921b',
+            x: 0.15625,
+            y: 0,
+            width: 0.093,
+            height: rH,
+            className: 'highlight'
+           },
+           {
+            id: 'y1922',
+            x: 0.25,
+            y: 0,
+            width: 0.093,
+            height: rH,
+            className: 'highlight'
+           },
+           {
+            id: 'y1923',
+            x: 0.34375,
+            y: 0,
+            width: 0.093,
+            height: rH,
+            className: 'highlight'
+           },
+           {
+            id: 'y1924',
+            x: 0.4375,
+            y: 0,
+            width: 0.093,
+            height: rH,
+            className: 'highlight'
+           },
+           {
+            id: 'y1925',
+            x: 0.53125,
+            y: 0,
+            width: 0.093,
+            height: rH,
+            className: 'highlight'
+           },
+           {
+            id: 'y1926',
+            x: 0.625,
+            y: 0,
+            width: 0.093,
+            height: rH,
+            className: 'highlight'
+           },
+           {
+            id: 'y1927',
+            x: 0.71875,
+            y: 0,
+            width: 0.093,
+            height: rH,
+            className: 'highlight'
+           },
+           {
+            id: 'y1928',
+            x: 0.8125,
+            y: 0,
+            width: 0.093,
+            height: rH,
+            className: 'highlight'
+           },
+           {
+            id: 'y1929',
+            x: 0.90625,
+            y: 0,
+            width: 0.093,
+            height: rH,
+            className: 'highlight'
+           }
+           ],
 
            getTileUrl: function( level, x, y ){
             return "img/" +
@@ -64,5 +141,36 @@
         }
       });
     </script>
+    <div id="y1921a">
+    <center><p>1921</p></center>
+    </div>
+    <div id="y1921b">
+    <center><p>1921</p></center>
+    </div>
+    <div id="y1922">
+    <center><p>1922</p></center>
+    </div>
+    <div id="y1923">
+    <center><p>1923</p></center>
+    </div>
+    <div id="y1924">
+    <center><p>1924</p></center>
+    </div>
+    <div id="y1925">
+    <center><p>1925</p></center>
+    </div>
+    <div id="y1926">
+    <center><p>1926</p></center>
+    </div>
+    <div id="y1927">
+    <center><p>1927</p></center>
+    </div>
+    <div id="y1928">
+    <center><p>1928</p></center>
+    </div>
+    <div id="y1929">
+    <center><p>1929</p></center>
+    </div>
+
   </body>
 </html>
