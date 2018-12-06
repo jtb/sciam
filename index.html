@@ -89,15 +89,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.0/openseadragon.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-      var level = 5;
+      var level = 6;
       var pow = Math.pow(2, level);
-      h = 578;
-      w = 440;
-      rH = 0.16420454545;
+      h = 1000;
+      w = 750;
+      rH = 3/18;
       var viewer = OpenSeadragon({
         id:            'foo',
-        height: 578,
-        width: 440,
+        height: 1000,
+        width: 750,
         prefixUrl:     "https://cdnjs.cloudflare.com/ajax/libs/openseadragon/2.4.0/images/",
         showNavigator:  true,
         tileSources:   {
@@ -597,7 +597,7 @@
             className: 'highlighto'
            },
            {
-            id: 'y1821',
+            id: 'y1981',
             x: 0.15625,
             y: 6*rH,
             width: 0.093,
