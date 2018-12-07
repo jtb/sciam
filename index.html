@@ -94,7 +94,8 @@
       var pow = Math.pow(2, level);
       h = 1000;
       w = 750;
-      rH = 3/18;
+      rH = 1/6;
+      rW = 3/32
       var viewer = OpenSeadragon({
         id:            'foo',
         height: 1000,
@@ -110,18 +111,10 @@
 
            overlays: [
            {
-            id: 'y1921a',
-            x: 0.0625,
+            id: 'y1921',
+            x: 0,
             y: 0,
-            width: 0.09375,
-            height: rH,
-            className: 'highlight'
-           },
-           {
-            id: 'y1921b',
-            x: 0.15625,
-            y: 0,
-            width: 0.093,
+            width: 0.0625 + 2*rW,
             height: rH,
             className: 'highlight'
            },
@@ -129,7 +122,7 @@
             id: 'y1922',
             x: 0.25,
             y: 0,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlight'
            },
@@ -137,7 +130,7 @@
             id: 'y1923',
             x: 0.34375,
             y: 0,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlight'
            },
@@ -145,7 +138,7 @@
             id: 'y1924',
             x: 0.4375,
             y: 0,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlight'
            },
@@ -153,7 +146,7 @@
             id: 'y1925',
             x: 0.53125,
             y: 0,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlight'
            },
@@ -161,7 +154,7 @@
             id: 'y1926',
             x: 0.625,
             y: 0,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlight'
            },
@@ -169,7 +162,7 @@
             id: 'y1927',
             x: 0.71875,
             y: 0,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlight'
            },
@@ -177,7 +170,7 @@
             id: 'y1928',
             x: 0.8125,
             y: 0,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlight'
            },
@@ -185,7 +178,7 @@
             id: 'y1929',
             x: 0.90625,
             y: 0,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlight'
            },
@@ -193,7 +186,7 @@
             id: 'y1930',
             x: 0.0625,
             y: rH,
-            width: 0.09375,
+            width: rW,
             height: rH,
             className: 'highlightred'
            },
@@ -201,7 +194,7 @@
             id: 'y1931',
             x: 0.15625,
             y: rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightred'
            },
@@ -209,7 +202,7 @@
             id: 'y1932',
             x: 0.25,
             y: rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightred'
            },
@@ -217,7 +210,7 @@
             id: 'y1933',
             x: 0.34375,
             y: rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightred'
            },
@@ -225,7 +218,7 @@
             id: 'y1934',
             x: 0.4375,
             y: rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightred'
            },
@@ -233,7 +226,7 @@
             id: 'y1935',
             x: 0.53125,
             y: rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightred'
            },
@@ -241,7 +234,7 @@
             id: 'y1936',
             x: 0.625,
             y: rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightred'
            },
@@ -249,7 +242,7 @@
             id: 'y1937',
             x: 0.71875,
             y: rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightred'
            },
@@ -257,7 +250,7 @@
             id: 'y1938',
             x: 0.8125,
             y: rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightred'
            },
@@ -265,7 +258,7 @@
             id: 'y1939',
             x: 0.90625,
             y: rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightred'
            },
@@ -273,7 +266,7 @@
             id: 'y1940',
             x: 0.0625,
             y: 2*rH,
-            width: 0.09375,
+            width: rW,
             height: rH,
             className: 'highlighto'
            },
@@ -281,7 +274,7 @@
             id: 'y1941',
             x: 0.15625,
             y: 2*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlighto'
            },
@@ -289,7 +282,7 @@
             id: 'y1942',
             x: 0.25,
             y: 2*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlighto'
            },
@@ -297,7 +290,7 @@
             id: 'y1943',
             x: 0.34375,
             y: 2*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlighto'
            },
@@ -305,7 +298,7 @@
             id: 'y1944',
             x: 0.4375,
             y: 2*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlighto'
            },
@@ -313,7 +306,7 @@
             id: 'y1945',
             x: 0.53125,
             y: 2*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlighto'
            },
@@ -321,7 +314,7 @@
             id: 'y1946',
             x: 0.625,
             y: 2*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlighto'
            },
@@ -329,7 +322,7 @@
             id: 'y1947',
             x: 0.71875,
             y: 2*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlighto'
            },
@@ -337,7 +330,7 @@
             id: 'y1948',
             x: 0.8125,
             y: 2*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlighto'
            },
@@ -345,7 +338,7 @@
             id: 'y1949',
             x: 0.90625,
             y: 2*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlighto'
            },
@@ -353,7 +346,7 @@
             id: 'y1950',
             x: 0.0625,
             y: 3*rH,
-            width: 0.09375,
+            width: rW,
             height: rH,
             className: 'highlightg'
            },
@@ -361,7 +354,7 @@
             id: 'y1951',
             x: 0.15625,
             y: 3*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightg'
            },
@@ -369,7 +362,7 @@
             id: 'y1952',
             x: 0.25,
             y: 3*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightg'
            },
@@ -377,7 +370,7 @@
             id: 'y1953',
             x: 0.34375,
             y: 3*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightg'
            },
@@ -385,7 +378,7 @@
             id: 'y1954',
             x: 0.4375,
             y: 3*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightg'
            },
@@ -393,7 +386,7 @@
             id: 'y1955',
             x: 0.53125,
             y: 3*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightg'
            },
@@ -401,7 +394,7 @@
             id: 'y1956',
             x: 0.625,
             y: 3*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightg'
            },
@@ -409,7 +402,7 @@
             id: 'y1957',
             x: 0.71875,
             y: 3*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightg'
            },
@@ -417,7 +410,7 @@
             id: 'y1958',
             x: 0.8125,
             y: 3*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightg'
            },
@@ -425,7 +418,7 @@
             id: 'y1959',
             x: 0.90625,
             y: 3*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightg'
            },
@@ -433,7 +426,7 @@
             id: 'y1960',
             x: 0.0625,
             y: 4*rH,
-            width: 0.09375,
+            width: rW,
             height: rH,
             className: 'highlight'
            },
@@ -441,7 +434,7 @@
             id: 'y1961',
             x: 0.15625,
             y: 4*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlight'
            },
@@ -449,7 +442,7 @@
             id: 'y1962',
             x: 0.25,
             y: 4*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlight'
            },
@@ -457,7 +450,7 @@
             id: 'y1963',
             x: 0.34375,
             y: 4*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlight'
            },
@@ -465,7 +458,7 @@
             id: 'y1964',
             x: 0.4375,
             y: 4*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlight'
            },
@@ -473,7 +466,7 @@
             id: 'y1965',
             x: 0.53125,
             y: 4*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlight'
            },
@@ -481,7 +474,7 @@
             id: 'y1966',
             x: 0.625,
             y: 4*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlight'
            },
@@ -489,7 +482,7 @@
             id: 'y1967',
             x: 0.71875,
             y: 4*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlight'
            },
@@ -497,7 +490,7 @@
             id: 'y1968',
             x: 0.8125,
             y: 4*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlight'
            },
@@ -505,7 +498,7 @@
             id: 'y1969',
             x: 0.90625,
             y: 4*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlight'
            },
@@ -513,7 +506,7 @@
             id: 'y1970',
             x: 0.0625,
             y: 5*rH,
-            width: 0.09375,
+            width: rW,
             height: rH,
             className: 'highlightred'
            },
@@ -521,7 +514,7 @@
             id: 'y1971',
             x: 0.15625,
             y: 5*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightred'
            },
@@ -529,7 +522,7 @@
             id: 'y1972',
             x: 0.25,
             y: 5*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightred'
            },
@@ -537,7 +530,7 @@
             id: 'y1973',
             x: 0.34375,
             y: 5*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightred'
            },
@@ -545,7 +538,7 @@
             id: 'y1974',
             x: 0.4375,
             y: 5*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightred'
            },
@@ -553,7 +546,7 @@
             id: 'y1975',
             x: 0.53125,
             y: 5*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightred'
            },
@@ -561,7 +554,7 @@
             id: 'y1976',
             x: 0.625,
             y: 5*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightred'
            },
@@ -569,7 +562,7 @@
             id: 'y1977',
             x: 0.71875,
             y: 5*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightred'
            },
@@ -577,7 +570,7 @@
             id: 'y1978',
             x: 0.8125,
             y: 5*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightred'
            },
@@ -585,7 +578,7 @@
             id: 'y1979',
             x: 0.90625,
             y: 5*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightred'
            },
@@ -593,7 +586,7 @@
             id: 'y1980',
             x: 0.0625,
             y: 6*rH,
-            width: 0.09375,
+            width: rW,
             height: rH,
             className: 'highlighto'
            },
@@ -601,7 +594,7 @@
             id: 'y1981',
             x: 0.15625,
             y: 6*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlighto'
            },
@@ -609,7 +602,7 @@
             id: 'y1982',
             x: 0.25,
             y: 6*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlighto'
            },
@@ -617,7 +610,7 @@
             id: 'y1983',
             x: 0.34375,
             y: 6*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlighto'
            },
@@ -625,7 +618,7 @@
             id: 'y1984',
             x: 0.4375,
             y: 6*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlighto'
            },
@@ -633,7 +626,7 @@
             id: 'y1985',
             x: 0.53125,
             y: 6*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlighto'
            },
@@ -641,7 +634,7 @@
             id: 'y1986',
             x: 0.625,
             y: 6*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlighto'
            },
@@ -649,7 +642,7 @@
             id: 'y1987',
             x: 0.71875,
             y: 6*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlighto'
            },
@@ -657,7 +650,7 @@
             id: 'y1988',
             x: 0.8125,
             y: 6*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlighto'
            },
@@ -665,7 +658,7 @@
             id: 'y1989',
             x: 0.90625,
             y: 6*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlighto'
            },
@@ -673,7 +666,7 @@
             id: 'y1990',
             x: 0.0625,
             y: 7*rH,
-            width: 0.09375,
+            width: rW,
             height: rH,
             className: 'highlightg'
            },
@@ -681,7 +674,7 @@
             id: 'y1991',
             x: 0.15625,
             y: 7*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightg'
            },
@@ -689,7 +682,7 @@
             id: 'y1992',
             x: 0.25,
             y: 7*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightg'
            },
@@ -697,7 +690,7 @@
             id: 'y1993',
             x: 0.34375,
             y: 7*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightg'
            },
@@ -705,7 +698,7 @@
             id: 'y1994',
             x: 0.4375,
             y: 7*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightg'
            },
@@ -713,7 +706,7 @@
             id: 'y1995',
             x: 0.53125,
             y: 7*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightg'
            },
@@ -721,7 +714,7 @@
             id: 'y1996',
             x: 0.625,
             y: 7*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightg'
            },
@@ -729,7 +722,7 @@
             id: 'y1997',
             x: 0.71875,
             y: 7*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightg'
            },
@@ -737,7 +730,7 @@
             id: 'y1998',
             x: 0.8125,
             y: 7*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightg'
            },
@@ -745,7 +738,7 @@
             id: 'y1999',
             x: 0.90625,
             y: 7*rH,
-            width: 0.093,
+            width: rW,
             height: rH,
             className: 'highlightg'
            }
@@ -758,10 +751,7 @@
         }
       });
     </script>
-    <div id="y1921a">
-    <center><p>1921</p></center>
-    </div>
-    <div id="y1921b">
+    <div id="y1921">
     <center><p>1921</p></center>
     </div>
     <div id="y1922">
